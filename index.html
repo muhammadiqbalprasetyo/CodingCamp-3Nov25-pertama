@@ -13,11 +13,102 @@
   <body>
     <header class="main-header">
       <div class="logo"></div>
+
+      <nav class="flex">
+        <a class="border rounded p-2" href="#home-page">Home</a>
+        <a class="border rounded p-2" href="#our-profile-page">Our Profile</a>
+        <a class="border rounded p-2" href="#portfolio-page">Portfolio</a>
+        <a class="border rounded p-2" href="#message-us-page">Message Us</a>
+      </nav>
     </header>
 
-    <main></main>
+    <hr />
 
-    <footer></footer>
+    <main>
+      <section id="home-page" class="min-h-[500px] text-center">
+        <h2 class="text-xl font-bold" id="welcome-speech">
+          Welcome to Our Website
+        </h2>
+        <p class="m-2">
+          Kami senang Anda ada di sini. Jelajahi layanan dan penawaran kami.
+        </p>
+      </section>
+
+      <hr />
+
+      <section id="our-profile-page" class="min-h-[500px] text-center">
+        <h2 class="text-xl font-bold">About Mipras Company</h2>
+        <p class="m-2">
+          Mipras Company adalah perusahaan pertambangan emas global dengan
+          portofolio operasi, proyek, dan aktivitas eksplorasi yang beragam dan
+          berkualitas tinggi di 10 negara di empat benua. Kami mengejar peluang
+          penciptaan nilai yang melibatkan mineral lain, di mana kami dapat
+          memanfaatkan aset, kepemilikan saham, keterampilan, dan pengalaman
+          kami yang ada.
+        </p>
+      </section>
+
+      <hr />
+
+      <section id="portfolio-page" class="min-h-[500px] text-center">
+        <h2 class="text-xl font-bold">Our Portfolio</h2>
+        <p class="m-2">
+          Mipras Company adalah perusahaan pertambangan emas global dengan
+          portofolio operasi dan proyek yang beragam secara geografis. Kami
+          bekerja di seluruh spektrum rantai nilai pertambangan dan menyadari
+          dampak kegiatan kami terhadap masyarakat dan lingkungan.
+        </p>
+      </section>
+
+      <hr />
+
+      <section id="message-us-page" class="min-h-[500px] max-w-lg max-auto">
+        <header>
+          <h2 class="text-xl font-bold">Message Us</h2>
+          <p class="m-2">
+            Punya pertanyaan atau ingin bekerja sama dengan kami? Kirimkan pesan
+            kepada kami dan kami akan segera menghubungi Anda kembali.
+          </p>
+        </header>
+
+        <form. id="message-us"> 
+          <div class="ab-4">
+            <label class="block mb-2" for="Name">Name:</label>
+            <input class="w-full p-2 border rounded" type="text" id="name"
+            placeholder="Your Name" required
+          </div>
+
+          <div class="ab-4">
+            <label class="block mb-2" for="email">email:</label>
+            <input class="w-full p-2 border rounded" type="email" id="email"
+            placeholder="Your email" required
+          </div>
+
+          <div class="ab-4">
+            <label class="block mb-2" for="message">Message:</label>
+            <textarea
+              class="w-full p-2 border rounded"
+              id="message"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button
+            class="px-4 py-2 bg-blue-500 text-white rounded"
+            type="submit"
+            onclick="validateForm ()"
+          >
+            Send Message
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <hr />
+
+    <footer>
+      <p class="text-center p=4">2024 Mipras Company. All right reserved</p>
+    </footer>
 
     <script src="js/script.js"></script>
   </body>
